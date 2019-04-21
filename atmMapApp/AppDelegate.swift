@@ -1,12 +1,5 @@
-//
-//  AppDelegate.swift
-//  atmMapApp
-//
-//  Created by godemodegame on 18.04.2019.
-//  Copyright © 2019 godemodegame. All rights reserved.
-//
-
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +8,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        GMSServices.provideAPIKey("AIzaSyA7sBy_aLjbuU5fMBoQ3sdujEzZ8K2jwho")
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let tabBarController = TabBarController()
+        window?.rootViewController = tabBarController
+        
         return true
     }
 

@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DF00C9BC39F6770E7B80472 /* libPods-atmMapApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DA9240472BD262586A4B79 /* libPods-atmMapApp.a */; };
 		C127BE8F2268CB0D00D27652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BE8E2268CB0D00D27652 /* AppDelegate.swift */; };
-		C127BE912268CB0D00D27652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BE902268CB0D00D27652 /* ViewController.swift */; };
-		C127BE942268CB0D00D27652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C127BE922268CB0D00D27652 /* Main.storyboard */; };
+		C127BE912268CB0D00D27652 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BE902268CB0D00D27652 /* TableViewController.swift */; };
 		C127BE962268CB0E00D27652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C127BE952268CB0E00D27652 /* Assets.xcassets */; };
 		C127BE992268CB0E00D27652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C127BE972268CB0E00D27652 /* LaunchScreen.storyboard */; };
+		C127BEA12268CD4B00D27652 /* Atm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEA02268CD4B00D27652 /* Atm.swift */; };
+		C127BEA32268CF7800D27652 /* fetchAtmsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEA22268CF7800D27652 /* fetchAtmsJSON.swift */; };
+		C127BEB32268E84100D27652 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEB22268E84100D27652 /* TabBarController.swift */; };
+		C127BEB5226907F300D27652 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C127BEB4226907F300D27652 /* Podfile */; };
+		C127BEB722690BDA00D27652 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEB622690BDA00D27652 /* MapViewController.swift */; };
+		C127BEB922698A3200D27652 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEB822698A3200D27652 /* Coordinates.swift */; };
+		C1974C56226B053100BAD66B /* POIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1974C55226B053100BAD66B /* POIItem.swift */; };
+		C1974C5A226C5FE100BAD66B /* GMUCustomClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1974C59226C5FE100BAD66B /* GMUCustomClusterRenderer.m */; };
+		C1D6E54422699E57003BF068 /* rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6E54322699E57003BF068 /* rgb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01DA9240472BD262586A4B79 /* libPods-atmMapApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-atmMapApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9367497FA6C178DA5A21B66B /* Pods-atmMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atmMapApp.release.xcconfig"; path = "Target Support Files/Pods-atmMapApp/Pods-atmMapApp.release.xcconfig"; sourceTree = "<group>"; };
 		C127BE8B2268CB0D00D27652 /* atmMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atmMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C127BE8E2268CB0D00D27652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C127BE902268CB0D00D27652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C127BE932268CB0D00D27652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C127BE902268CB0D00D27652 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C127BE952268CB0E00D27652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C127BE982268CB0E00D27652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C127BE9A2268CB0E00D27652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C127BEA02268CD4B00D27652 /* Atm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atm.swift; sourceTree = "<group>"; };
+		C127BEA22268CF7800D27652 /* fetchAtmsJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchAtmsJSON.swift; sourceTree = "<group>"; };
+		C127BEB22268E84100D27652 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C127BEB4226907F300D27652 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C127BEB622690BDA00D27652 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C127BEB822698A3200D27652 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		C1974C54226AFE8200BAD66B /* GoogleMapsUtils-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMapsUtils-Bridge-Header.h"; sourceTree = "<group>"; };
+		C1974C55226B053100BAD66B /* POIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIItem.swift; sourceTree = "<group>"; };
+		C1974C59226C5FE100BAD66B /* GMUCustomClusterRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMUCustomClusterRenderer.m; sourceTree = "<group>"; };
+		C1974C5B226C621E00BAD66B /* GMUCustomClusterRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMUCustomClusterRenderer.h; sourceTree = "<group>"; };
+		C1D6E54322699E57003BF068 /* rgb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rgb.swift; sourceTree = "<group>"; };
+		CB6CF4DA4B55ADA98229946D /* Pods-atmMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atmMapApp.debug.xcconfig"; path = "Target Support Files/Pods-atmMapApp/Pods-atmMapApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF00C9BC39F6770E7B80472 /* libPods-atmMapApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93E0D8A1AF522C6B34D47978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01DA9240472BD262586A4B79 /* libPods-atmMapApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC9D8E4BDB403A2F3997A691 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6CF4DA4B55ADA98229946D /* Pods-atmMapApp.debug.xcconfig */,
+				9367497FA6C178DA5A21B66B /* Pods-atmMapApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C127BE822268CB0D00D27652 = {
 			isa = PBXGroup;
 			children = (
+				C127BEB4226907F300D27652 /* Podfile */,
 				C127BE8D2268CB0D00D27652 /* atmMapApp */,
 				C127BE8C2268CB0D00D27652 /* Products */,
+				AC9D8E4BDB403A2F3997A691 /* Pods */,
+				93E0D8A1AF522C6B34D47978 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +97,39 @@
 		C127BE8D2268CB0D00D27652 /* atmMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				C1974C55226B053100BAD66B /* POIItem.swift */,
+				C1D6E54322699E57003BF068 /* rgb.swift */,
 				C127BE8E2268CB0D00D27652 /* AppDelegate.swift */,
-				C127BE902268CB0D00D27652 /* ViewController.swift */,
-				C127BE922268CB0D00D27652 /* Main.storyboard */,
+				C127BEA42268D95100D27652 /* Model */,
+				C127BEA52268D9E200D27652 /* Controllers */,
 				C127BE952268CB0E00D27652 /* Assets.xcassets */,
+				C1974C5B226C621E00BAD66B /* GMUCustomClusterRenderer.h */,
+				C1974C59226C5FE100BAD66B /* GMUCustomClusterRenderer.m */,
+				C1974C54226AFE8200BAD66B /* GoogleMapsUtils-Bridge-Header.h */,
 				C127BE972268CB0E00D27652 /* LaunchScreen.storyboard */,
 				C127BE9A2268CB0E00D27652 /* Info.plist */,
 			);
 			path = atmMapApp;
+			sourceTree = "<group>";
+		};
+		C127BEA42268D95100D27652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C127BEA02268CD4B00D27652 /* Atm.swift */,
+				C127BEA22268CF7800D27652 /* fetchAtmsJSON.swift */,
+				C127BEB822698A3200D27652 /* Coordinates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C127BEA52268D9E200D27652 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C127BEB22268E84100D27652 /* TabBarController.swift */,
+				C127BE902268CB0D00D27652 /* TableViewController.swift */,
+				C127BEB622690BDA00D27652 /* MapViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C127BE9D2268CB0E00D27652 /* Build configuration list for PBXNativeTarget "atmMapApp" */;
 			buildPhases = (
+				1A33B46E3AB36DEFC7012AEF /* [CP] Check Pods Manifest.lock */,
 				C127BE872268CB0D00D27652 /* Sources */,
 				C127BE882268CB0D00D27652 /* Frameworks */,
 				C127BE892268CB0D00D27652 /* Resources */,
+				8979C83A872CDDE772DCF4F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +192,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C127BEB5226907F300D27652 /* Podfile in Resources */,
 				C127BE992268CB0E00D27652 /* LaunchScreen.storyboard in Resources */,
 				C127BE962268CB0E00D27652 /* Assets.xcassets in Resources */,
-				C127BE942268CB0D00D27652 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A33B46E3AB36DEFC7012AEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-atmMapApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8979C83A872CDDE772DCF4F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-atmMapApp/Pods-atmMapApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atmMapApp/Pods-atmMapApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C127BE872268CB0D00D27652 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C127BE912268CB0D00D27652 /* ViewController.swift in Sources */,
+				C127BEB32268E84100D27652 /* TabBarController.swift in Sources */,
+				C127BEB722690BDA00D27652 /* MapViewController.swift in Sources */,
+				C127BEB922698A3200D27652 /* Coordinates.swift in Sources */,
+				C127BE912268CB0D00D27652 /* TableViewController.swift in Sources */,
 				C127BE8F2268CB0D00D27652 /* AppDelegate.swift in Sources */,
+				C127BEA12268CD4B00D27652 /* Atm.swift in Sources */,
+				C1974C5A226C5FE100BAD66B /* GMUCustomClusterRenderer.m in Sources */,
+				C127BEA32268CF7800D27652 /* fetchAtmsJSON.swift in Sources */,
+				C1974C56226B053100BAD66B /* POIItem.swift in Sources */,
+				C1D6E54422699E57003BF068 /* rgb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C127BE922268CB0D00D27652 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C127BE932268CB0D00D27652 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C127BE972268CB0E00D27652 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,9 +387,11 @@
 		};
 		C127BE9E2268CB0E00D27652 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6CF4DA4B55ADA98229946D /* Pods-atmMapApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9SGQL8822;
 				INFOPLIST_FILE = atmMapApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,16 +399,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmg.atmMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/godemodegame/Desktop/atmMapApp/atmMapApp/GoogleMapsUtils-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C127BE9F2268CB0E00D27652 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9367497FA6C178DA5A21B66B /* Pods-atmMapApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9SGQL8822;
 				INFOPLIST_FILE = atmMapApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,8 +419,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmg.atmMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/godemodegame/Desktop/atmMapApp/atmMapApp/GoogleMapsUtils-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
