@@ -15,6 +15,8 @@ class TableViewController: UITableViewController {
         navigationController?.navigationBar.barTintColor = UIColor(r: 26, g: 186, b: 78)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.tintColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadViewController))
+        navigationItem.rightBarButtonItem?.tintColor = .white
         navigationItem.title = "Банкоматы"
     }
     
@@ -38,5 +40,13 @@ class TableViewController: UITableViewController {
         mapViewController.cameraCoordinates = Coordinates(latitude: Float(atms[indexPath.row].latitude), longitude: Float(atms[indexPath.row].longitude))
         navigationController?.pushViewController(mapViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    @objc func reloadViewController() {
+        loadAtms {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 }

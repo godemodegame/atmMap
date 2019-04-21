@@ -4,6 +4,7 @@ import Foundation
 var urlToData: URL {
     let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0] + "/data.json"
     let urlPath = URL(fileURLWithPath: path)
+    print(path)
     return urlPath
 }
 
