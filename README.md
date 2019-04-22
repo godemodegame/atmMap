@@ -20,4 +20,5 @@
 обьекты есть в кластере, тогда можно было бы выводить список банкоматов входящих в кластер, наподобие, как выводится одного.
 <br><br><img src="https://github.com/godemodegame/atmMap/blob/master/images/marker.png" width="250">
 <img src="https://github.com/godemodegame/atmMap/blob/master/images/cluster.png" width="250">
-<br>приложение было написано на swift 4.1 только из-за проблем с компьютером
+<br><br><i>TODO: переписать на swift 5(написан на 4.1 из-за проблем с компьютером)
+<br>TODO: исправить проблему с маркерами</i>
