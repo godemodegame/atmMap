@@ -34,18 +34,11 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
-//        atms?.forEach({ (atm) in
-//            let marker = GMSMarker()
-//            marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(atm.latitude), longitude: CLLocationDegrees(atm.longitude))
-//            marker.title = atm.type
-//            marker.snippet = atm.street + " " + atm.nameOfStreet + ", " + atm.numberOfHouse + (atm.building != nil ? "к\(atm.building!)" : "")
-//            marker.map = mapView
-//        })
-//
+
         // Cluster
         let iconGenerator = GMUDefaultClusterIconGenerator()
         let algorithm = GMUNonHierarchicalDistanceBasedAlgorithm()
-        let renderer = GMUCustomClusterRenderer(mapView: mapView, clusterIconGenerator: iconGenerator)
+        let renderer = GMUDefaultClusterRenderer(mapView: mapView, clusterIconGenerator: iconGenerator)
         clusterManager = GMUClusterManager(map: mapView, algorithm: algorithm, renderer: renderer)
         generateClusterItems()
         clusterManager.cluster()
@@ -82,7 +75,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         if let poiItem = marker.userData as? POIItem {
-            print(clusterManager)
             let index = poiItem.number
             guard let atms = atms else { return false }
             let atm = atms[index]

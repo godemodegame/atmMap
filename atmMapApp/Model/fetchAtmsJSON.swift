@@ -10,7 +10,7 @@ var urlToData: URL {
 
 // Downloading new data.json
 func loadAtms(completionHandler: (()->Void)?) {
-    let urlString = "http://80.211.90.93:8080/api/atms"
+    let urlString = "http://localhost:8080/api/atms"
     guard let url = URL(string: urlString) else { return }
     
     URLSession(configuration: .default).downloadTask(with: url) { (urlFile, responce, error) in

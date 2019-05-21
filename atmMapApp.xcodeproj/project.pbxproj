@@ -19,7 +19,6 @@
 		C127BEB722690BDA00D27652 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEB622690BDA00D27652 /* MapViewController.swift */; };
 		C127BEB922698A3200D27652 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127BEB822698A3200D27652 /* Coordinates.swift */; };
 		C1974C56226B053100BAD66B /* POIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1974C55226B053100BAD66B /* POIItem.swift */; };
-		C1974C5A226C5FE100BAD66B /* GMUCustomClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1974C59226C5FE100BAD66B /* GMUCustomClusterRenderer.m */; };
 		C1D6E54422699E57003BF068 /* rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6E54322699E57003BF068 /* rgb.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +39,6 @@
 		C127BEB822698A3200D27652 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		C1974C54226AFE8200BAD66B /* GoogleMapsUtils-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMapsUtils-Bridge-Header.h"; sourceTree = "<group>"; };
 		C1974C55226B053100BAD66B /* POIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIItem.swift; sourceTree = "<group>"; };
-		C1974C59226C5FE100BAD66B /* GMUCustomClusterRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMUCustomClusterRenderer.m; sourceTree = "<group>"; };
-		C1974C5B226C621E00BAD66B /* GMUCustomClusterRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMUCustomClusterRenderer.h; sourceTree = "<group>"; };
 		C1D6E54322699E57003BF068 /* rgb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rgb.swift; sourceTree = "<group>"; };
 		CB6CF4DA4B55ADA98229946D /* Pods-atmMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atmMapApp.debug.xcconfig"; path = "Target Support Files/Pods-atmMapApp/Pods-atmMapApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,14 +94,11 @@
 		C127BE8D2268CB0D00D27652 /* atmMapApp */ = {
 			isa = PBXGroup;
 			children = (
-				C1974C55226B053100BAD66B /* POIItem.swift */,
 				C1D6E54322699E57003BF068 /* rgb.swift */,
 				C127BE8E2268CB0D00D27652 /* AppDelegate.swift */,
 				C127BEA42268D95100D27652 /* Model */,
 				C127BEA52268D9E200D27652 /* Controllers */,
 				C127BE952268CB0E00D27652 /* Assets.xcassets */,
-				C1974C5B226C621E00BAD66B /* GMUCustomClusterRenderer.h */,
-				C1974C59226C5FE100BAD66B /* GMUCustomClusterRenderer.m */,
 				C1974C54226AFE8200BAD66B /* GoogleMapsUtils-Bridge-Header.h */,
 				C127BE972268CB0E00D27652 /* LaunchScreen.storyboard */,
 				C127BE9A2268CB0E00D27652 /* Info.plist */,
@@ -115,6 +109,7 @@
 		C127BEA42268D95100D27652 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1974C55226B053100BAD66B /* POIItem.swift */,
 				C127BEA02268CD4B00D27652 /* Atm.swift */,
 				C127BEA22268CF7800D27652 /* fetchAtmsJSON.swift */,
 				C127BEB822698A3200D27652 /* Coordinates.swift */,
@@ -166,6 +161,7 @@
 				TargetAttributes = {
 					C127BE8A2268CB0D00D27652 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -250,7 +246,6 @@
 				C127BE912268CB0D00D27652 /* TableViewController.swift in Sources */,
 				C127BE8F2268CB0D00D27652 /* AppDelegate.swift in Sources */,
 				C127BEA12268CD4B00D27652 /* Atm.swift in Sources */,
-				C1974C5A226C5FE100BAD66B /* GMUCustomClusterRenderer.m in Sources */,
 				C127BEA32268CF7800D27652 /* fetchAtmsJSON.swift in Sources */,
 				C1974C56226B053100BAD66B /* POIItem.swift in Sources */,
 				C1D6E54422699E57003BF068 /* rgb.swift in Sources */,
@@ -399,8 +394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmg.atmMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/godemodegame/Desktop/atmMapApp/atmMapApp/GoogleMapsUtils-Bridge-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "./atmMapApp/GoogleMapsUtils-Bridge-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -419,8 +414,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmg.atmMapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/godemodegame/Desktop/atmMapApp/atmMapApp/GoogleMapsUtils-Bridge-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "./atmMapApp/GoogleMapsUtils-Bridge-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
